@@ -16,9 +16,9 @@ const pool = mysql.createPool({
 });
 
 const initConnection = await mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: ""
+  host: "gateway01.ap-southeast-1.prod.alicloud.tidbcloud.com",
+  user: "2n32FnfBzv4XyJi.root",
+  password: "GdNOFr9wpqZnn3ml"
 });
 await initConnection.query("CREATE DATABASE IF NOT EXISTS db_perpustakaan");
 await initConnection.end();
