@@ -1,19 +1,19 @@
 import mysql from "mysql2/promise";
 
-// const pool = mysql.createPool({
-//   host: "gateway01.ap-southeast-1.prod.alicloud.tidbcloud.com",
-//   user: "2n32FnfBzv4XyJi.root",
-//   password: "GdNOFr9wpqZnn3ml",
-//   database: "db_perpustakaan",
-//   waitForConnections: true,
-//   connectionLimit: 10,
-//   queueLimit: 0,
-//   port: 4000,
-//   ssl: {
-//     minVersion: 'TLSv1.2',
-//     rejectUnauthorized: true
-//   }
-// });
+const pool = mysql.createPool({
+  host: "gateway01.ap-southeast-1.prod.alicloud.tidbcloud.com",
+  user: "2n32FnfBzv4XyJi.root",
+  password: "GdNOFr9wpqZnn3ml",
+  database: "db_perpustakaan",
+  waitForConnections: true,
+  connectionLimit: 10,
+  queueLimit: 0,
+  port: 4000,
+  ssl: {
+    minVersion: 'TLSv1.2',
+    rejectUnauthorized: true
+  }
+});
 
 const initConnection = await mysql.createConnection({
   host: "gateway01.ap-southeast-1.prod.alicloud.tidbcloud.com",
