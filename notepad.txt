@@ -1,6 +1,0 @@
-Tentang one to many, many to one 
- Perpustakaan dan Buku
- One-to-Many: Satu perpustakaan bisa memiliki banyak buku.
- Many-to-One: Banyak buku berada di satu perpustakaan.
- Tabel perpustakaan: id_perpus (PK), nama, alamat, jam_buka, telepon
- Tabel buku: id_buku (PK), id_perpus (FK), judul, pengarang, penerbit, tahun
